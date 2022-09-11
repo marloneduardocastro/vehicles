@@ -27,19 +27,21 @@ Arquitectura DDD.
 
 * ¿Cómo de escalable es tu solución propuesta?
 ```
-La solucion usando WebSockets es escalable porque es optima para aplicaciones orientadas a eventos (esta arquitectura se 
-caracteriza por ser escalable), tener comunicaciones en tiempo real y ofrecen la fácilidad de poder integrarse con un 
-microservicio nuevo en nuestro ecosistema, permitiendo a cualquier microservicio el envío de mensajes a los distintos 
-topics de nuestros websockets. Adicionalmente se implementa con programación reactiva que es elstica y escalable porque
-ofrece la posibilidad de poder combinar y trabajar con una gran cantidad de datos de manera asincrona  y reaccionar a 
-variaciones en la carga de trabajo y a cambios en la frecuencia de peticiones incrementando o reduciendo los recursos 
-asignados para servir dichas peticiones.
+La solucion usando WebSockets es escalable porque es optima para aplicaciones orientadas a eventos 
+(esta arquitectura se caracteriza por ser escalable), tener comunicaciones en tiempo real y ofrecen 
+la fácilidad de poder integrarse con un microservicio nuevo en nuestro ecosistema, permitiendo a 
+cualquier microservicio el envío de mensajes a los distintos topics de nuestros websockets. 
+Adicionalmente se implementa con programación reactiva que es elstica y escalable porque ofrece la 
+posibilidad de poder combinar y trabajar con una gran cantidad de datos de manera asincrona  y 
+reaccionar a variaciones en la carga de trabajo y a cambios en la frecuencia de peticiones 
+incrementando o reduciendo los recursos asignados para servir dichas peticiones.
 ```
 
 * ¿Qué problemas a futuro podría presentar? Si has detectado alguno, ¿qué
 alternativas propones para solventar dichos problemas?
 
 ```
-EL trafico puede generar inconvenientes para su optimo funcionamiento en terminos de latencia y disponibilidad, para esto es 
-necesario interactuar con aplicaciones que permiten gestionar y distribuir trafico como APIgateway o balanceadores de carga.
+EL trafico puede generar inconvenientes para su optimo funcionamiento en terminos de latencia y 
+disponibilidad, para esto es necesario interactuar con aplicaciones que permiten gestionar y 
+distribuir trafico como APIgateway o balanceadores de carga.
 ```
